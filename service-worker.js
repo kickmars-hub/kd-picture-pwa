@@ -1,4 +1,4 @@
-const CACHE = "pic-check-v2";
+const CACHE = "pic-check-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
