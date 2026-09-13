@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Picture Description Check</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <nav id="numberButtons" class="number-buttons" aria-label="Picture numbers"></nav>
+
+    <section class="picture-area">
+      <div class="picture-frame">
+        <img id="picture" alt="Picture 1" src="PIC01KD.png" />
+      </div>
+    </section>
+
+    <section class="answer-area">
+      <label for="studentAnswer" class="sr-only">Your English sentence</label>
+      <div class="answer-row">
+        <textarea id="studentAnswer" rows="3" placeholder="Write your English sentence here."></textarea>
+        <button id="checkButton" class="check-button" type="button">CHECK</button>
+      </div>
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
